@@ -6,6 +6,10 @@
  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
+ <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+ <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+   onload="renderMathInElement(document.body);"></script>
 </head>
 
 <body>
@@ -13,16 +17,18 @@
 <div data-role="header" data-position="fixed">
  <div data-role="navbar"><ul>
   <li><a href="https://qoto.org/" data-prefetch="true">QOTO.org</a></li>
+  <li><a href="https://qoto.org/" data-prefetch="true">QOTO.org</a></li>
  </ul></div>
 </div>
 
 <div data-role="content">
- <h2>Hello World for landing <a href="https://qoto.org/about/more" data-prefetch="true">QOTO.org RULES</a>.</h2>
+ <h2 style="text-align:center;">Hello \(\LaTeX\) World for landing <a href="https://qoto.org/about/more" data-prefetch="true">QOTO.org RULES</a>.</h2>
 </div>
 
-<div data-role="footer" data-position="fixed">
+<div data-role="footer" data-position="fixed" style="overflow:hidden;">
+ <h4 style="text-align:right;">For example, there is my account...</h4>
  <div data-role="navbar"><ul>
-  <li><a href="https://qoto.org/@puzzl" data-prefetch="true">For example, there is my account...</a></li>
+  <li><a href="https://qoto.org/@puzzl" data-prefetch="true"></a></li>
  </ul></div>
 </div>
 </div>
